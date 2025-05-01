@@ -1,0 +1,128 @@
+  <h3 class="text-center bg-primary py-2 mx-auto text-white"> Resume Builder</h3>
+
+
+  <div class="container-fluid" *ngIf="false">
+    <div class="row resume">
+      <div class=" col-6 builder">
+<div class="bg-white-group">
+  <p class="title">
+    Personal details
+
+  </p>
+  <p class="sub-text"> Users who added phone number and email received 64% more positive feedback from recruiters.</p>
+</div>
+
+       <div class="bg-white-group mt-2">
+        <div class="row">
+          <div class="col-6">
+            <div class="form-group">
+              <label for="Firstname"> First Name</label>
+              <input type="text " class="form-control mt-2 " title="firstname">
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <label for="lastname"> Last Name</label>
+              <input type="text " class="form-control mt-2" title="lastname">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="form-group">
+              <label for="phonenumber">Phone Number</label>
+              <input type="number" class="form-control mt-2" title="phonenumber">
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <label for="emailid"> Email-Id</label>
+              <input type="email" class="form-control mt-2" title="email">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="form-group">
+              <label for="Professional Summary">Professional Summary</label>
+              <textarea name="summary" class="form-control mt-2" id="summary" title="summary"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="form-group">
+              <label for="linked in">Linked In Profile</label>
+             <input type="url" class="mt-2" name="linked" id="linked" title="Linkedin Profile">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div class="form-group">
+              <label for="Github">Github Link</label>
+             <input type="url" class="mt-2" name="git" id="git" title="Github Link">
+            </div>
+          </div>
+        </div>
+       </div>
+
+       <!-- buttons -->
+       <div class="bg-white-group mt-2">
+        <div class="row">
+          <div class="col-6">
+            <!-- <button type="button" class="btn btn-primary mt-2">Save</button> -->
+          </div>
+          <div class="col-6">
+            <button type="button" class=" next-button mt-2">Next : Employment History</button>
+          </div>
+        </div>
+       </div>
+      </div>
+      <div class="col-6 preview">
+        <h5> Preview Resume </h5>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="container">
+      <div class="row mt-5 align-items-center">
+        <div class="col ms-auto justify-content-center d-flex">
+          <ul class="nav nav-tabs form_tab justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a [attr.disabled]="true" class="nav-link active show myitem complete" id="One-tab" role="tab"
+                aria-controls="One" aria-selected="true" data-bs-toggle="tab" data-bs-target="#One" type="button">
+                <span>1</span>
+                Job Details
+              </a>
+            </li>
+
+
+
+            <li class="nav-item">
+              <a class="nav-link myitem" [attr.disabled]="true" id="Two-tab" role="tab" data-bs-toggle="tab"
+                data-bs-target="#Two" type="button" aria-controls="Two" aria-selected="false">
+                <span>6</span>
+                Research Contribution
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="tab-content mt-2" id="myTabContent">
+      <div class="tab-pane fade show active" id="One" role="tabpanel" aria-labelledby="One-tab">
+        <button class="btn btn-primary" (click)="nextPage()" >Next</button>
+        </div>
+        <div class="tab-pane fade " id="Two" role="tabpanel" aria-labelledby="Two-tab">
+
+        </div>
+        </div>
+
+
+  </div>

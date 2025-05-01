@@ -1,0 +1,26 @@
+
+
+<h3> Employee  Form</h3>
+
+<form [formGroup]="employeeForm" >
+  <div class="row">
+    <div *ngFor="let formfield of formFields;" [ngClass]="formfield.class">
+      <!-- Field Type: text, number, date -->
+      <div class="form-group" *ngIf="formfield.fieldtype =='text' || formfield.fieldtype == 'date' || formfield.fieldtype =='number'">
+        <label for="{{formfield.name}}"> {{formfield.label}} </label>
+        <input [type]="formfield.fieldtype" title="{{formfield.name}}" [formControlName]="formfield.controlname" [placeholder]="formfield.placeholder" class="form-control mt-2">
+      </div>
+
+      <!-- Field Type: select -->
+       <div class="form-group" *ngIf="formfield.fieldtype =='select'" >
+         <label for="{{formfield.name}}"> {{formfield.label}} </label>
+        <select class="form-select mt-2" name="{{formfield.name}}" [formControlName]="formfield.controlname" id="{{formfield.name}}">
+          <option value="" selected disabled> {{formfield.placeholder}} </option>
+          <option *ngFor="let opt of formfield.options" value="{{opt}}">{{opt}}</option>
+        </select>
+       </div>
+
+    </div>
+  </div>
+
+</form>

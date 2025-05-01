@@ -1,0 +1,93 @@
+[
+  {
+    "label": "Name",
+    "fieldtype": "text",
+    "controlname": "name",
+    "placeholder": "Enter Name",
+    "group": "General Information",
+    "class": "col-3",
+    "validator": { "required": true }
+  },
+  {
+    "label": "Gender",
+    "fieldtype": "text",
+    "controlname": "gender",
+    "placeholder": "Enter Gender",
+    "group": "General Information",
+    "class": "col-3",
+    "validator": { "required": true }
+  },
+  {
+    "label": "Nationality",
+    "fieldtype": "text",
+    "controlname": "nationality",
+    "placeholder": "Enter Nationality",
+    "group": "General Information",
+    "class": "col-3",
+    "validator": { "required": true }
+  },
+  {
+    "label": "Religion",
+    "fieldtype": "text",
+    "controlname": "religion",
+    "placeholder": "Enter Religion",
+    "group": "General Information",
+    "class": "col-3",
+    "validator": { "required": true }
+  },
+  {
+    "label": "Marital Status",
+    "fieldtype": "text",
+    "controlname": "maritalStatus",
+    "placeholder": "Enter Marital Status",
+    "group": "General Information",
+    "class": "col-3",
+    "validator": { "required": true }
+  },
+  {
+    "label": "Caste",
+    "fieldtype": "text",
+    "controlname": "caste",
+    "placeholder": "Enter Caste",
+    "group": "General Information",
+    "class": "col-3",
+    "validator": { "required": true }
+  },
+  {
+    "label": "Region",
+    "fieldtype": "text",
+    "controlname": "region",
+    "placeholder": "Enter Region",
+    "group": "General Information",
+    "class": "col-3",
+    "validator": { "required": true }
+  },
+  {
+    "label": "Blood Group",
+    "fieldtype": "select",
+    "controlname": "bloodGroup",
+    "placeholder": "Enter Blood Group",
+    "group": "General Information",
+    "options":["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"],
+    "class": "col-3",
+    "validator": { "required": true }
+  },
+  {
+    "label": "Department",
+    "fieldtype": "number",
+    "controlname": "department",
+    "placeholder": "Enter Department ID",
+    "group": "General Information",
+    "class": "col-3",
+    "validator": { "required": true }
+  },
+  {
+    "label": "Address",
+    "fieldtype": "text",
+    "controlname": "address",
+    "placeholder": "Enter Address",
+    "group": "General Information",
+    "class": "col-3",
+    "validator": { "required": true }
+  }
+]
